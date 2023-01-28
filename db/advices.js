@@ -2,11 +2,7 @@ const v4 = require("uuid")
 const uuid = v4.v4
 let db = {
     suggestedAdvice:[
-        {
-            id:uuid(),
-            title:"Suggested advice",
-            advice:"put this suggestion"
-        }
+        
     ],
     advices:[
         {

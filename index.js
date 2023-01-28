@@ -31,7 +31,6 @@ app.post("/addAdvice", (req, res) => {
         console.error()
     }
 })
-app.up
 app.delete("/removeAdvice/:id", (req, res) => {
     const adviceId = req.params.id
     db.advices = db.advices.filter(adv => adv.id.toString() !== adviceId.toString())
@@ -39,4 +38,4 @@ app.delete("/removeAdvice/:id", (req, res) => {
 app.delete("/removeSuggestedAdvice/:id", (req, res) => {
     const adviceId = req.params.id
     db.suggestedAdvice = db.suggestedAdvice.filter(adv => adv.id.toString() !== adviceId.toString())
-})
+}) 
