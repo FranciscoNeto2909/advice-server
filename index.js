@@ -2,10 +2,10 @@ const { db } = require("./db/advices")
 const express = require("express")
 const cors = require("cors")
 const app = express()
-
+const port = process.env.PORT || "3001"
 app.use(express.json())
 app.use(cors())
-app.listen("3001", console.log("Executando..."))
+app.listen(port, console.log("Executando..."))
 
 app.get("/", (req, res) => {
     res.send(db.advices)
